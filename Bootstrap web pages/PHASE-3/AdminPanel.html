@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ASIAN POST-One of the leading news channels in the world</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <style type="text/css">
+	@media all and (min-width:768px){
+	.navbar-form{
+		margin-left: 22em;
+	}
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+  background-color:   #DC143C;
+}
+
+a:focus,a:hover{
+  color: #FFF8DC;
+  text-decoration: none;
+}
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+
+
+/*Twitter*/
+.loginBtn--twitter {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background:  	#4099FF;
+}
+.loginBtn--twitter:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_twitter.png') 6px 6px no-repeat;
+}
+.loginBtn--twitter:hover,
+.loginBtn--twitter:focus {
+  background:  	#1E90FF;
+}
+
+.footer-bs {
+    background-color: #3c3d41;
+  padding: 60px 40px;
+  color: rgba(255,255,255,1.00);
+  margin-bottom: -10px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 6px;
+  margin-left: -10em;
+  margin-right: -10em;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+  .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+</style>
+</head>
+
+<body>
+   
+  	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li><a href="Homepage.html">Home</a></li>
+        <li><a href="World-news.html">World</a></li>
+        <li><a href="Business-news.html">Business</a></li>
+        <li><a href="Sports-news.html">Sports</a></li>
+        <li><a href="Entertainment-news.html">Entertainment</a></li>
+        <li><a href="Education-news.html">Education and Health</a></li>
+        <li><a href="Politics-news.html">Politics</a></li>
+        <li class="active"><a href="AdminPanel.html">Admin</a></li>
+        <form class="navbar-form navbar-right" role="search" >
+    		<div class="form-group">
+        		<input type="text" class="form-control" placeholder="Search">
+    		</div>
+    		<button type="submit" class="btn btn-success" style="">Submit</button>
+		</form>
+		</li>
+      </ul>
+         </div>
+  </div>
+</nav>
+<div class="container">
+
+                <form class="form-horizontal" method="post" action="AdminLogin.php">
+  <fieldset>
+    <div class="form-group">
+      <label class="control-label col-sm-2" name="Username" for="Username" style="color:  #8B008B">Username:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="email" placeholder="Enter username" name="username">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" style="color:   #8B008B" for="pwd">Password:</label>
+      <div class="col-sm-6">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+
+    <div class="form-group">       
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label style="color:  #4169E1; text-align: left"><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+      </div>
+    </div>    	
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
+    </div>
+    </fieldset>
+ </form>
+        <h2 style="color:   #8B008B; text-align: center"><b>OR</b></h2>
+    	<h3 class="omb_authTitle" style="color:    #8B008B; text-align: center">Login with:</h3>
+    	<br>
+    	<div class="text-center">
+    	   <a href="https://facebook.com/"><button class="loginBtn loginBtn--facebook">
+             Login with Facebook
+           </button></a>
+            <a href="https://plus.google.com/"><button class="loginBtn loginBtn--google">
+            Login with Google
+           </button></a>
+           <a href="https://twitter.com/"></a><button class="loginBtn loginBtn--twitter">
+           	 Login with Twitter
+           </button>
+
+         </div>  
+          <br>
+          <br>
+          <h2 style="color:   #8B008B; text-align: center"><b>OR</b></h2>
+          <div class="text-center">
+          <button type="button" class="btn btn-success col-sm-2 col-sm-offset-5" >
+            <a href="AddUser.html" style="color: #FFF8DC">SIGN UP</a>
+          </button>
+          </div>             
+	        <br>
+          <br>
+          <br>
+</div>
+
+<!--Footer-->
+ <div class="container">
+   <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-3 footer-brand animated fadeInLeft">
+              <h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2017 Asian Post, All rights reserved</p>
+            </div>
+          <div class="col-md-4 footer-nav animated fadeInUp">
+              <h4>Menu —</h4>
+              <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+              <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="Login.html">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="col-md-2 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">RSS</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+          <div class="col-md-3 footer-ns animated fadeInRight">
+              <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+ </div>
+</body>
+
+</html>
