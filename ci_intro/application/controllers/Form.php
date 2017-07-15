@@ -18,27 +18,6 @@ $this->form_validation->set_rules('pwdc', 'Password Confirmation', 'trim|require
          $this->load->view('myform'); 
          } 
          else { 
-              $db['default'] = array(
-        'dsn'   => '',
-        'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'phpmyadmin',
-        'dbdriver' => 'mysqli',
-        'dbprefix' => '',
-        'pconnect' => TRUE,
-        'db_debug' => TRUE,
-        'cache_on' => FALSE,
-        'cachedir' => '',
-        'char_set' => 'utf8',
-        'dbcollat' => 'utf8_general_ci',
-        'swap_pre' => '',
-        'encrypt' => FALSE,
-        'compress' => FALSE,
-        'stricton' => FALSE,
-        'failover' => array()
-);
-$this->load->database($db);
           
 $salt = "exaggeration";
 
