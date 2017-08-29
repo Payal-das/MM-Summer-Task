@@ -132,7 +132,9 @@
             <input type="submit" name="regisSubmit" class="btn-primary" value="Submit"/>
         </div>
     </form>
-    <p class="footInfo">Already have an account? <a href="<?php echo base_url(); ?>users/login">Login here</a></p>              
+    <?php $this->load->helper('url');
+    ?>
+    <p class="footInfo">Already have an account? <?php echo anchor('Users/login','Login here!!'); ?></p>              
 </div>
 </body>
 </html>

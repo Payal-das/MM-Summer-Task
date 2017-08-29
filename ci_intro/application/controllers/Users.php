@@ -9,6 +9,9 @@ class Users extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->model('user');
     }
+    public function index(){
+        $this->load->view('users/login');
+    }
     
     /*
      * User account information
@@ -39,11 +42,12 @@ class Users extends CI_Controller {
         }
         if($this->input->post('loginSubmit')){
             $this->form_validation->set_rules('username', 'Username', 'required');
+            $this->form_validation->set_rules('email', 'Email', 'required');
             $this->form_validation->set_rules('password', 'password', 'required');
             if ($this->form_validation->run() == true) {
                 $con['returnType'] = 'single';
                 $con['conditions'] = array(
-                    'username'=>input->post('username'),
+                    'username'=>$this->input->post('username'),
                     'email'=>$this->input->post('email'),
                     'password' => md5($this->input->post('password')),
                     'status' => '1'

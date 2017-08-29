@@ -130,7 +130,9 @@
             <input type="submit" name="loginSubmit" class="btn-primary" value="Submit"/>
         </div>
     </form>
-    <p class="footInfo">Don't have an account? <a href="<?php echo base_url(); ?>users/registration">Register here</a></p>
+    <?php $this->load->helper('url');
+    ?>
+    <p class="footInfo">Don't have an account? <?php echo anchor('Users/registration','Registration'); ?></p>
 </div>
 </body>
 </html>
